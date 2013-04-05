@@ -1,0 +1,25 @@
+#dev libraries
+libxslt1-dev
+libcurl4-openssl-dev
+libksba8
+libksba-dev
+libqtwebkit-dev
+automake
+pkg-config
+libpcre3-dev
+zlib1g-dev
+imagemagick
+
+#Daemons
+postgresql
+postgresql-server-dev-all
+redis-server
+
+#dev tools
+exuberant-ctags
+vim-gtk
+xclip
+tmux
+watch
+git
+zsh

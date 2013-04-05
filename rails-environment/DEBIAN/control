@@ -1,0 +1,12 @@
+Package: rails-environment
+Version: 0.1.0
+Section: main
+Priority: optional
+Architecture: all
+Depends: autoconf, automake, bison, cdbs, chrpath, coreutils, debhelper, exuberant-ctags, file, git, imagemagick, libcurl4-openssl-dev, libffi-dev, libgdbm-dev, libksba8, libksba-dev, libncurses5-dev, libncursesw5-dev, libpcre3-dev, libqtwebkit-dev, libreadline6-dev, libssl-dev, libxslt1-dev, libyaml-dev, m4, openssl, patch, pkg-config, postgresql, postgresql-server-dev-all, procps, quilt, redis-server, ruby1.8, tcl-dev, tk-dev, tmux, vim-gtk, watch, xclip, zlib1g-dev, zlib1g-dev, zsh
+Installed-Size:
+Maintainer: Dan Collis-Puro, thoughtbot 
+Description: Packages needed for modern ruby development
+ This metapackage depends on development libraries, daemons, and development tools
+ commonly used by ruby developers.
+
