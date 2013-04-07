@@ -1,0 +1,42 @@
+#!/bin/sh
+
+CLEAR="\033[0m"
+ORANGE="\033[33m"
+
+fancy_echo() {
+  echo -e ${ORANGE}$1${CLEAR}
+  echo
+}
+
+echo "\033[33m
+We've installed the packages needed to build your ruby development environment.
+
+The next step is to run 'rails-environment-post-install.sh'.
+
+This needs to be run under the developer account you'll use and requires sudo
+only to install the heroku toolbelt.  Everything except the heroku toolbelt is
+installed under the developer account you run the post-install script as.
+
+IMPORTANT - to use this script, you must have a zsh login shell for your
+developer account.
+
+You can zsh as your login shell thusly:
+
+  chsh -s `which zsh`
+
+'rails-environment-post-install.sh' will install / configure:
+
+* an SSH key for you to copy to your github account. You can ignore this step
+  and close the browser window we open. We don't overwrite your existing rsa key.
+* The silver searcher (ag), a fast git-aware ack / grep alternative,
+* rbenv to manage installing multiple ruby versions,
+* rbenv-gem-rehash, an rbenv plugin to automatically add gem-installed binaries
+  to your local path,
+* ruby-build to simplify installing new rubies via rbenv,
+* A recent stable ruby,
+* The "hub" gem to simplify interaction with github,
+* The heroku toolbelt,
+* A core set of gems important to rails development,
+* and the heroku-config gem to simplify pulling environment data from heroku.
+\033[0m
+"

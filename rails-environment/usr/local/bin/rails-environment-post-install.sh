@@ -66,7 +66,7 @@ fancy_echo "Installing ruby-build for installing Rubies ..."
   successfully git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 fancy_echo "Installing Ruby 1.9.3-p392 ..."
-  successfully rbenv install 1.9.3-p392
+  successfully RUBY_CFLAGS="-march=native -O2" rbenv install 1.9.3-p392
 
 fancy_echo "Setting Ruby 1.9.3-p392 as global default Ruby ..."
   successfully rbenv global 1.9.3-p392
@@ -86,3 +86,6 @@ fancy_echo "Installing Heroku CLI client ..."
 
 fancy_echo "Installing the heroku-config plugin for pulling config variables locally to be used as ENV variables ..."
   successfully heroku plugins:install git://github.com/ddollar/heroku-config.git
+
+fancy_echo "Your shell will now restart in order for changes to apply."
+  exec `which zsh` -l
