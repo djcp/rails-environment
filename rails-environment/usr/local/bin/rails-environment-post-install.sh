@@ -65,8 +65,10 @@ fancy_echo "Installing rbenv-gem-rehash so the shell automatically picks up bina
 fancy_echo "Installing ruby-build for installing Rubies ..."
   successfully git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
+RUBY_CFLAGS="-march=native -O2" || $RUBY_CFLAGS
+
 fancy_echo "Installing Ruby 1.9.3-p392 ..."
-  successfully RUBY_CFLAGS="-march=native -O2" rbenv install 1.9.3-p392
+  successfully RUBY_CFLAGS=$RUBY_CFLAGS rbenv install 1.9.3-p392
 
 fancy_echo "Setting Ruby 1.9.3-p392 as global default Ruby ..."
   successfully rbenv global 1.9.3-p392

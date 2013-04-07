@@ -16,15 +16,14 @@ DEPENDS=${DEPENDS:2}
 
 cat <<EOCONTROL
 Package: rails-environment
-Version: 0.1.0
+Version: 1.0.0
 Section: main
 Priority: optional
 Architecture: all
 Depends: ${DEPENDS}
-Installed-Size:
-Maintainer: Dan Collis-Puro, thoughtbot 
-Description: Packages needed for modern ruby development
- This metapackage depends on development libraries, daemons, and development tools
- commonly used by ruby developers.
+Maintainer: Dan Collis-Puro, thoughtbot <djcp+rails-environment@thoughtbot.com>
+Homepage: http://github.com/thoughtbot/
+Description: A modern ruby and ruby-on-rails dev environment
+ This package depends on development libraries, daemons, and development tools commonly used by rails developers. It also includes a post-install script that installs rbenv, ruby-build, ag, and other necessary tools into your user account.
 
 EOCONTROL
